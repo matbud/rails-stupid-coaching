@@ -1,0 +1,25 @@
+<% 
+if @question.include?("?") 
+  answer = "Silly question, get dressed and go to work!"
+elsif @question == "I am going to work"
+  answer = "Great!"
+else
+  answer = "I don't care, get dressed and go to work!"
+end
+%>
+
+<div class="container">
+  <h1 class=>Stupid coaching</h1>
+  <div class="message question">
+    <span><%= @question %></span><br>
+    <span class="italic">-You</span>
+  </div>
+
+
+  <div class="message answer">
+    <span class="answer-bold"><%= answer %></span><br>
+    <span class="italic">-Coach</span>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
+

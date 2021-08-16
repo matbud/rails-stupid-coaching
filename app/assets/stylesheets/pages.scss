@@ -1,0 +1,67 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.message {
+  padding: 10px 20px;
+  border-left: rgb(170, 168, 168) 7px solid;
+  margin: 20px 0;
+  span {
+    line-height: 1.5;
+  }
+}
+
+.question {
+  background-color: rgb(175, 220, 248);
+}
+.answer {
+  background-color: lightyellow;
+}
+
+.answer-bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  &:hover {
+    color: black;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 0 7px 7px 0; // top-left, top-right, bottom-right, bottom-left
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.text-field {
+  flex-grow: 1;
+  border: 2px solid lightgray;
+  border-right: none;
+  border-radius: 7px 0 0 7px;
+  &:focus {
+    outline: none;
+  }
+}
